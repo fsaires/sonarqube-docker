@@ -1,6 +1,4 @@
-# Sonar Qube and Sonar Scanner running on Docker with database Postgres. 
-
-![](https://github.com/fsaires/sonarqube/blob/master/sonarqube.png)
+# Sonar Qube and Sonar Scanner running on Docker with Postgres database. 
 
 # What is Sonar?
 
@@ -10,7 +8,7 @@ Sonar is a web based code quality analysis tool for Maven based Java projects. I
 
 ## Using container
 
-1. Simply run `docker-compose up -d` and go to `http:localhost:9000`. Wait some seconds until Sonar is ready, and log with `admin` password `admin`, and skip the tutorial.
+1. Simply run `$ docker-compose up -d` and go to `http:localhost:9000`. Wait some seconds until Sonar is ready, and log with `admin` password `admin`, and skip the tutorial.
 
 ![](https://github.com/fsaires/sonarqube-docker/blob/master/img/login.png?raw=true)
 
@@ -24,7 +22,7 @@ Sonar is a web based code quality analysis tool for Maven based Java projects. I
 
 4. Now, to perform the code analysis you will need to run the Sonar Scanner, just use the executable in container, at the end of the execution the container will be removed. Run the comand inside your project folder or add the path in `sonar-project.properties`. 
 
-`docker run -e SONAR_HOST_URL=<YOUR_IP>:9000 -it -v ${pwd}:/usr/src --network sonarqube_sonarqube --rm sonarsource/sonar-scanner-cli sonar-scanner`
+- `$ docker run -e SONAR_HOST_URL=http://<YOUR_IP>:9000 -it -v ${pwd}:/usr/src --network sonarqube_sonarqube --rm sonarsource/sonar-scanner-cli sonar-scanner`
 
 ![](https://github.com/fsaires/sonarqube-docker/blob/master/img/running.png?raw=true)
 
