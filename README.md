@@ -1,8 +1,8 @@
-# Sonar Qube and Sonar Scanner running on Docker with Postgres database. 
+# SonarQube and SonarScanner running on Docker with Postgres database. 
 
-# What is Sonar?
+# What is SonarQube?
 
-Sonar is a web based code quality analysis tool for Maven based Java projects. It covers a wide area of code quality check points which include: Architecture & Design, Complexity, Duplications, Coding Rules, Potential Bugs, Unit Test etc. Sonar has a rich set of features like what you would get with different tools such as Covertura, PMD, FindBugs, Check Styles combined.
+SonarQube is a web based code quality analysis tool for Maven based Java projects. It covers a wide area of code quality check points which include: Architecture & Design, Complexity, Duplications, Coding Rules, Potential Bugs, Unit Test etc. Sonar has a rich set of features like what you would get with different tools such as Covertura, PMD, FindBugs, Check Styles combined.
 
 # Getting started
 
@@ -35,4 +35,4 @@ Sonar is a web based code quality analysis tool for Maven based Java projects. I
 > Note that you will need a file to config sonar-project, that file is `sonar-project.properties`, there is all configs to perform you code analysis. See the example file and sample code for more information.
 
 ## Documentacion
-For more information, access the Sonar Qube docs [Sonar Qube docs](https://docs.sonarqube.org/display/SONAR/Documentation) and [Sonar Scanner Docs](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner)
+For more information, access the [SonarQube docs](https://docs.sonarqube.org/display/SONAR/Documentation) and [SonarScanner docs](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner)
